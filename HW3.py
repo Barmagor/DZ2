@@ -1,4 +1,4 @@
-n = int(input("Введите целое: "))
+n = int(input("Введите число: "))
 for i in range (n+1):
     if i !=0:
         x=pow((1/i+1),i)
@@ -9,7 +9,6 @@ for j in range (n+1):
         x=pow((1/i+1),i)
         y=x+y
 print("Сумма =", y)
-
 
 
             
