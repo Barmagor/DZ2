@@ -1,8 +1,9 @@
+import random
 n = int(input("Введите число: "))
-lst= [i for i in range(-n, n+1)]
+lst= [random.randint(0, 10) for i in range(-n, n+1)]
 print(lst)
-for j in lst:
-    for z in lst:
-        if lst[j] == lst[z]:
-            lst[j], lst[j+1] = lst[j+1], lst[j]
+for j in range (len(lst)-1):
+    for z in range(len(lst)-j-1):
+        if lst[z] > lst[z+1]:
+            lst[z], lst[z+1] = lst[z+1], lst[z]
 print(lst)
